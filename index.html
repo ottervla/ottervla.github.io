@@ -67,7 +67,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">OTTER: A Vision-Language-Action Model with Text-Aware Visual Feature Extraction</h1>
+          <h1 class="title is-1 publication-title">🦦 OTTER: A Vision-Language-Action Model with Text-Aware Visual Feature Extraction</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://qingh097.github.io/">Huang Huang</a><sup>*</sup>,</span>
@@ -258,6 +258,28 @@
 </section>
 
 <!-- Optional: Additional Sections such as Experiments, Visual Effects, etc. can be added similarly -->
+ <!-- Abstract Section -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Results</h2>
+        <div class="content has-text-justified">
+          <p>
+            <b>Simulation results on LIBERO</b> We evaluate OTTER and other baselines on 300 trials on in-distribution tasks in LIBERO Spatial/Object/Goal, and 100 trials on unseen tasks we constructed. The numbers marked with ∗ of are directly referred from the <a href="https://openvla.github.io/"></a>OpenVLA paper</a>. OTTER performs on par with existing VLAs on in-distribution tasks and significantly outperforms them on unseen objects and environment configurations.
+            <img src="files/simulation_results.png" alt="OTTER Results" style="width:100%; max-height:500px; object-fit:contain;">
+          </p>
+          <p>
+            <b>Real Robot Multi-primitive zero-shot generalization</b> We train models across four manipulation primitives (pouring, drawer manipulation, poking, and pick-and-place) with a total of 1,185 human tele-operated demonstration trajectories and evaluate them on 150 trials of completely unseen tasks within these primitives. The results further suggest that OTTER’s generalization capabilities can be enhanced through increased model capacity (OTTER-L) and pre-training on large robotic datasets (OTTER-OXE).
+          </p>
+          <p>
+            <img src="files/multi-primitive-real.png" alt="OTTER Results" style="width:100%; max-height:500px; object-fit:contain;">
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <footer class="footer">
   <div class="container">
